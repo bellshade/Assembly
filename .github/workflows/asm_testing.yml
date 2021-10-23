@@ -1,0 +1,10 @@
+name: assembly testing file
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: testing install
+        run: |
+          apt-get install nasm
