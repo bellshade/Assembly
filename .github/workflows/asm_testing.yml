@@ -8,3 +8,6 @@ jobs:
       - name: testing install
         run: |
           sudo apt-get install -y nasm
+      - name: testing run makefile
+        run: |
+          sudo make
