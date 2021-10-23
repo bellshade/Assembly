@@ -8,6 +8,6 @@ jobs:
       - name: testing install
         run: |
           sudo apt-get install -y nasm
-      - name: lihat file
+      - name: testing run makefile
         run: |
-          git diff-tree --no-commit-id --name-only -r ${{ github.sha }} 
+          sudo make
