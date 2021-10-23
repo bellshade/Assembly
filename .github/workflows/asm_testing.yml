@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        name: testing install
+      - name: testing install
         run: |
           apt-get install nasm
