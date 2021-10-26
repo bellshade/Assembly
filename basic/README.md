@@ -9,3 +9,8 @@ ada beberapa dasar alasan menggunakan bahasa rakita dari sudut pandang penggunaa
 - bahasa rakitan dibandingkan dengan bahasa tingkat tinggi
 
     bahasa rakitan memungkinkan programmer untuk mengontrol serta memanfaatkan secara penuh kapabilitas yang terdapat pada suatu perangkat keras, berbeda halnya dengan bahasa pemograman tingkat tinggi yang memiliki banyak keterbatasan dalam pemanfaatan secara penuh suatu perangkat keras. bahasa rakitan menjanjika tingkat unuk kerja yang maksimum kaerna sifatnya yang menerjemahkan secara langsung instruksi rakita menjadi instruksi mesin, berbeda halnya dengan bahasa pemograman tingkat tinggi yang biasanya menerjemahkan sebuah instruksi menjadi sejumlah kode mesin
+
+list tutorial 1
+
+0. [pemahaman tentang assembly](0_pemahaman)
+1. [hello world](1_hello_world)
