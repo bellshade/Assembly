@@ -2,7 +2,7 @@
 
 contoh sederhana dari hello world pada assembly
 
-[srouce code](HELLOWORLD.asm)
+[source code](helloworld.asm)
 ```assembly
 section .text
     global _start       ; wajib deklarasi untuk linker atau ld
