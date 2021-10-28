@@ -66,7 +66,7 @@ nasm -m elf_i386 -s -o namafile namafile.o
 
 ## panduan kontribusi
 - setiap perubahan dari kamu harus menghasil output yang sesuai dari
-- menggunakan ``lowercase`` untuk penaamaan file 
+- menggunakan ``snake_case`` untuk penaamaan file 
 - tiap satu tutorial atau implementasi harus di dalam satu folder sebagai contoh
 ```
 hitung_variabel
