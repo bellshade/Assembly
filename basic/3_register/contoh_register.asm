@@ -1,3 +1,8 @@
+; compile dengan cara
+; nasm -f elf32 -o namafile.o namafile.asm
+; ld -m elf_i386 -o namafile namafile.o
+; ./namafile
+
 section .text
   global _start
 
