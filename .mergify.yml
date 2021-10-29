@@ -1,10 +1,39 @@
 pull_request_rules:
-  - name: Merge dengan label
+  - name: ci testing kalo sukses ke squash dengan label
     conditions:
-      - "#approved-reviews-by>=1"
-      - check-succes=assembly testing file - Pull Request
       - base=main
       - label=ready-to-merge
     actions:
       merge:
         method: squash
+  - name: assembly label
+    conditions:
+      - files~=\.asm$
+    actions:
+      label:
+        add:
+          - assembly files
+          - request tim assembly untuk review
+  - name: markdown label
+    conditions:
+      - files~=\.md$
+    actions:
+      label:
+        add:
+          - markdown files
+          - request docs team untuk review
+  - name: review docs team untuk file markdown
+    conditions:
+      - label=markdown files
+    actions:
+      request_reviews:
+        teams:
+          - "@bellshade/docs-team"
+
+  - name: review assembly team untuk file markdown
+    conditions:
+      - label=assembly files
+    actions:
+      request_reviews:
+        teams:
+          - "@slowy07"
