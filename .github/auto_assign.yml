@@ -1,0 +1,8 @@
+addReviewers: true
+
+addAssignees: true
+
+reviewers:
+  - slowy07
+
+numberOfReviewers: 0
