@@ -12,10 +12,10 @@ _start:
     mov     ecx, huruf          ; pesan yang akan ditulis
     mov     ebx, 1              ; stdout
     mov     eax, 4              ; sys_write
-    int0x80                     ; memanggil kernel
+    int     0x80                ; memanggil kernel
 
     mov     eax,1               ; sys_exit
-    int0x80                     ; memanggil kernel
+    int     0x80                ; memanggil kernel
 
 section .data
 huruf DB 'a'
