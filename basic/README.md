@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://c.tenor.com/3bTxZ4HdrysAAAAC/pixels-neon.gif">
+</p>
+
 # assembly
 bahasa assembly atau bahasa rakitan adalah bahasa pemograman tingkat rendah yang digunakan dalam pemograman komputer, mikroprosesor, pengendali mikro, dan perangkat lainnya yang dapat diprogram.
 
