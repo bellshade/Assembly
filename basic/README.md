@@ -10,7 +10,10 @@ ada beberapa dasar alasan menggunakan bahasa rakita dari sudut pandang penggunaa
 
     bahasa rakitan memungkinkan programmer untuk mengontrol serta memanfaatkan secara penuh kapabilitas yang terdapat pada suatu perangkat keras, berbeda halnya dengan bahasa pemograman tingkat tinggi yang memiliki banyak keterbatasan dalam pemanfaatan secara penuh suatu perangkat keras. bahasa rakitan menjanjika tingkat unuk kerja yang maksimum kaerna sifatnya yang menerjemahkan secara langsung instruksi rakita menjadi instruksi mesin, berbeda halnya dengan bahasa pemograman tingkat tinggi yang biasanya menerjemahkan sebuah instruksi menjadi sejumlah kode mesin
 
-list tutorial 1
+dalam pemograman komputer bahasa assembly kadang-kadang disingkat asm, adalah bahasa pemograman tingkat rendah dimana ada korespondensi yang sangat kuat antara instruksi dalam bahasa dan instruksi kode mesin arsitektur. bahasa assembly biasanya memliki suatu pernyataan per instruksi mesin, teatpi konstant, komentar, arahan, assembler, label simbolis dari lokasi program dan memori, dan makro umumnya juga didukung.
 
-0. [pemahaman tentang assembly](0_pemahaman)
-1. [hello world](1_hello_world)
+kode perakitan diubah menjadi kode mesin yang dapat dieksekusi oleh program utilitas yang disebut dengan assembler.kata __assembler__ ini umumnya dikaitkan dengan willkes, wheller dan gill dalam buku tahun 1951 ciptaan mereka dalam __persiapan program untuk komputer digital elektronik__, yang bagaimanapun, menggunakan istilah berarti "sebuah program yang merakit program lain yang terdiri dari beberapa bagiuan menjadi satu program".
+
+## sejarah dari bahasa assembly
+
+bahasa rakitan diperkenalkan ``kathleen booth`` berdasarkan karya teoritis yang dia mulai pada tahun 1947, saat bekerja di ARC2 di Birkbeck, university of london.
