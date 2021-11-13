@@ -42,3 +42,5 @@ secara historis, banyak program telah ditulis seluruhnya dalam bahasa assembly. 
 - assembler dapat dgunakan untuk menghasilan blok data, tanpa overhead bahasa tingkat tinggi, dari kode sumber yang diformat dan dikomentari, untuk digunakan oleh kode lain.
 
 selalu ada perdebatan tentang kegunaan dan kinerja bahasa rakitan relatif terhadap bahasa tingkat tinggi. meskipun bahasa rakitan memiliki kegunaan khusus di tempat yang penting.
+
+[pembahasan berikutnya](00_pemahaman)
