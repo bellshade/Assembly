@@ -17,3 +17,24 @@ kode perakitan diubah menjadi kode mesin yang dapat dieksekusi oleh program util
 ## sejarah dari bahasa assembly
 
 bahasa rakitan diperkenalkan ``kathleen booth`` berdasarkan karya teoritis yang dia mulai pada tahun 1947, saat bekerja di ARC2 di Birkbeck, university of london.
+
+pada akhir 1948, eletronic delay storage automatic calculator memiliki assembler bernama **initial order** yang terintergrasi ke dalam program bootstrapnya. ini menggunakan mnemonik satu huruf yang dikembangkan oleh david wheeler, yang dikreditkan oleh IEEE computer society sebagai pencipta "*perakit*" pertama.
+
+laporan tentang EDSAC memperkenalkan istilah "assembler" untuk menggabungkan bidang menjadi kata instruksi. SOAP ( **symbolic optimal assebmly**) adalah bahasa rakitan untuk komputer **IBM 650** ditulis oleh stan poly pada tahun 1955.
+
+bahasa rakitan menghilangkan banyak pemograman generasi pertama yang rawan kesalahan, dan memakan waktu yang dibutuhkan dengan komputer paling awal, membaskan programmer dari kebosana sperti mengingat kode numerik dan menghitung alamat.
+
+bahasa assembly pernah banyak digunakan untuk semua jenis pemograman. namun, pada 1980-an (1990 an pada mikrokomputer), penggunaanya sebagian besar telah digantikan oleh bahasa tingkat tinggi, dalam mencari peningkatan produktivitas pemograman. saat ini, bahasa rakitan masih digunakan untuk manipulasi perangkat keras langsung, akses ke instruksi prosesor khusus, atau untuk mengatasi masalah kinerja yang kritis. pengunaan yang umum adalah driver perangkat, sistem tertanam tingkat rendah dan sistem waktu nyata.
+
+secara historis, banyak program telah ditulis seluruhnya dalam bahasa assembly. **the burroghs mcp (1961)** adalahh komputer pertama  yang sistem operasi tidak dikembangkan sepenuhnya dalam bahasa assembly.
+
+## aplikasi umum dan penggunaan saat ini
+
+- bahasa assembly biasanya digunakan dalam kode boot sistem, kode tingkat rendah yang menginisialiasi dan menguji perangkat keras sistem sebelum mem-boot sistem operasi dan sering disimpan ke dalam *ROM* (**BIOS** pada sistem pc yang kompatibel dengan IBM dan CP/M adalah contohnya).
+- bahasa assembly sering digunakan untuk kode tingkat rendah, misalnya untuk **kernel sistem operasi**, yang tidak dapat mengandalkan ketersediaan panggilan sistem yang sudah ada sebelumnya dan memang harus mengimplementasikannya untuk arsitektur prosesor tertentu di mana sistem akan berjalan.
+- beberapa kompiler untuk bahasa tingkat yang relatif rendah, seperti pascal atau c, memungkinkan program untuk menyematkan bahasa assembly secara langsung dalam kode sumber tersebut ( disebut **inline assembly**). program yang menggunakan fasilitas tersebut kemudian dapat membangun abstraksi menggunakan bahasa rakitan yang berbeda pada setiap platform perangkat keras. kode portable sistem kemudian dapat menggunakan komponen khusus prosesor ini melalui antarmuka yang seragam.
+- bahasa assembly berguna dalam **reverse egineering**. banyak program hanya didistrubiskan dalam bentuk kode mesin yang mudah diterjemahkan ke dalam bahasa rakitan oleh disassembler, tetapi lebih sulit untuk diterjemahkan ke bahasa tingkat yang lebih tinggi melalui dekompiler. alat ini seperti **interactive disassembler** memanfaatkan pembongkaran secara ekstensif untuk tujuan seperti itu. teknik ini digunakan oleh peretas untuk memeachkan perangkat lunak komersial, dan pesaing untuk menghasilkan perangkat lunak dengan hasil serupa dari perusahaan asing.
+- bahasa assembly digunakan untuk meningkatkan kecepatan eksekusi, terutama pada komputer pribade awal dengan daya pemrosesan dan RAM yang terbatas.
+- assembler dapat dgunakan untuk menghasilan blok data, tanpa overhead bahasa tingkat tinggi, dari kode sumber yang diformat dan dikomentari, untuk digunakan oleh kode lain.
+
+selalu ada perdebatan tentang kegunaan dan kinerja bahasa rakitan relatif terhadap bahasa tingkat tinggi. meskipun bahasa rakitan memiliki kegunaan khusus di tempat yang penting.
