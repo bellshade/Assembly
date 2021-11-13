@@ -10,6 +10,22 @@
 
 Repositori ini berisi kumpulan source code serta tutorial dari bahasa **assembly**. Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada ``COTRIBUTING.md``.
 
+| Langkah |              Topik               |                                  Target Pembelajaran                                  |            Materi Rujukan                    |
+| :-----: | :------------------------------: | :-----------------------------------------------------------------------------------: | :----------------------------------:         |
+|   01    | pemahaman dari bahasa assembly   | Memahami konsep dasar dari pemograman assembly sebelum masuk ke langkah berikutnya    |  [Materi](Basic/00_pemahaman)                |
+|   02    |            hello world!          |                              Hello world !                                            |     [Materi](Basic/01_hello_world)           |
+|   03    |          semegmentasi memori     |                 Memahami konsep dasar segmentasi memori                               |      [Materi](Basic/02_memmory_segment)      |
+|   04    |             register             |                      Memahami konsep dari register pada assembly                      |      [Materi](Basic/03_register)             |
+|   05    |         pemanggilan sistem       |                         Memahami konsep dasar pemanggilan sistem assembly             |       [Materi](Basic/04_pemanggilan_sistem)  |
+|   06    |         mode adressing           |                        Memahami dari mode adressing assembly                          |    [Materi](Basic/05_addressing_mode)        |
+|   07    |          variabel                |                     Memahami konsep dasar dari variabel pada assembly                 | [Materi](Basic/06_variabel)                  |
+|   08    |            konstant              |            Memahami konsep dari konstant dari assembly                                |     [Materi](Basic/07_konstant)              |
+|   09    |         fungsi aritmatika        |                   Memahami konsep dasar aritmatika assembly                           |       [Materi](Basic/08_fungsi_aritmatika)   |
+|   10    |          instruksi logika        |                    Memahami konsep dasar logika assembly                              |    [Materi](Basic/09_instruksi_logika)       |
+|   11    |         instruksi kondisi        |                       Memahami instruksi kondisi pada assembly                        | [Materi](Basic/10_instruksi_kondisi)         |
+|   12    |            perluangan            |                         Memahami konsep dasar perulangan pada assembly                |     [Materi](Basic/11_perulangan)            |
+|   13    |              Module              |                  Memahami cara mengimport sebuah module pada python                   |      [Materi](Basic/12_data_angka)           |
+
 ## installasi
 -  ![linux_badge](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
