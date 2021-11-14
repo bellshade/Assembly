@@ -8,7 +8,7 @@
 [![lisensi](https://img.shields.io/github/license/bellshade/Assembly?style=for-the-badge)](LICENSE)
 ![testing assembly](https://img.shields.io/github/workflow/status/bellshade/Assembly/assembly%20testing%20file?label=testing%20assembly&style=for-the-badge)
 
-Repositori ini berisi kumpulan source code serta tutorial dari bahasa **assembly**. Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada ``COTRIBUTING.md``.
+Repositori ini berisi kumpulan source code serta tutorial dari bahasa [**assembly**](Basic/README.md). Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada ``COTRIBUTING.md``.
 
 | Langkah |              Topik               |                                  Target Pembelajaran                                  |            Materi Rujukan                    |
 | :-----: | :------------------------------: | :-----------------------------------------------------------------------------------: | :----------------------------------:         |
@@ -26,7 +26,7 @@ Repositori ini berisi kumpulan source code serta tutorial dari bahasa **assembly
 |   12    |            perluangan            |                         Memahami konsep dasar perulangan pada assembly                |     [Materi](basic/11_perulangan)            |
 |   13    |              Module              |                  Memahami cara mengimport sebuah module pada python                   |      [Materi](basic/12_data_angka)           |
 
-## installasi
+## installasi :desktop_computer:
 -  ![linux_badge](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
     - debian based (deb)
@@ -80,4 +80,4 @@ Repositori ini berisi kumpulan source code serta tutorial dari bahasa **assembly
     sebelumnya install terlebih dahulu codeblocks [disini](https://www.codeblocks.org/downloads/)
 
     untuk tutorial lebih lanjut bisa diliat [disini](https://www.wikihow.com/Run-NASM-on-Windows)
-    
+

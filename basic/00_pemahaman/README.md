@@ -47,4 +47,4 @@ section.text
 _start:
 ```
 
-[komentar dan statement pada assembly](comment_dan_statement_asm.md)
+[lanjut ke materi berikutnya (hello world)](../01_hello_world)
