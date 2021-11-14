@@ -8,7 +8,7 @@
 [![lisensi](https://img.shields.io/github/license/bellshade/Assembly?style=for-the-badge)](LICENSE)
 ![testing assembly](https://img.shields.io/github/workflow/status/bellshade/Assembly/assembly%20testing%20file?label=testing%20assembly&style=for-the-badge)
 
-Repositori ini berisi kumpulan source code serta tutorial dari bahasa [**assembly**](Basic/README.md). Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada ``COTRIBUTING.md``.
+Repositori ini berisi kumpulan source code serta tutorial dari bahasa [**assembly**](basic/README.md). Sebelum itu, bacalah terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang dapat ditemukan pada ``COTRIBUTING.md``.
 
 | Langkah |              Topik               |                                  Target Pembelajaran                                  |            Materi Rujukan                    |
 | :-----: | :------------------------------: | :-----------------------------------------------------------------------------------: | :----------------------------------:         |
