@@ -23,8 +23,10 @@ Repositori ini berisi kumpulan source code serta tutorial dari bahasa [**assembl
 |   09    |         fungsi aritmatika        |                   Memahami konsep dasar aritmatika assembly                           |       [Materi](basic/08_fungsi_aritmatika)   |
 |   10    |          instruksi logika        |                    Memahami konsep dasar logika assembly                              |    [Materi](basic/09_instruksi_logika)       |
 |   11    |         instruksi kondisi        |                       Memahami instruksi kondisi pada assembly                        | [Materi](basic/10_instruksi_kondisi)         |
-|   12    |            perluangan            |                         Memahami konsep dasar perulangan pada assembly                |     [Materi](basic/11_perulangan)            |
-|   13    |              Module              |                  Memahami cara mengimport sebuah module pada python                   |      [Materi](basic/12_data_angka)           |
+|   12    |            perulangan            |                         Memahami konsep dasar perulangan pada assembly                |     [Materi](basic/11_perulangan)            |
+|   13    |          data_angka              |                         Memahami tentang data angka pada assembly                     |      [Materi](basic/12_data_angka)           |
+|   14    |              string              |                         Memahami tentang string pada assembly                         |      [Materi](basic/13_string)               |
+|   15    |              array               |                         Memahami tentang basic array pada assembly                    |      [Materi](basic/14_array)                |
 
 ## installasi :desktop_computer:
 -  ![linux_badge](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
