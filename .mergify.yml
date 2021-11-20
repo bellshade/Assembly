@@ -21,16 +21,7 @@ pull_request_rules:
       label:
         add:
           - markdown files
-          - request docs team untuk review
-  - name: review docs team untuk file markdown
-    conditions:
-      - label=markdown files
-    actions:
-      request_reviews:
-        teams:
-          - "@bellshade/docs-team"
-
-  - name: review assembly team untuk file markdown
+  - name: review assembly team untuk file assembly
     conditions:
       - label=assembly files
     actions:

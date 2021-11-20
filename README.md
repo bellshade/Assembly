@@ -27,6 +27,7 @@ Repositori ini berisi kumpulan source code serta tutorial dari bahasa [**assembl
 |   13    |          data_angka              |                         Memahami tentang data angka pada assembly                     |      [Materi](basic/12_data_angka)           |
 |   14    |              string              |                         Memahami tentang string pada assembly                         |      [Materi](basic/13_string)               |
 |   15    |              array               |                         Memahami tentang basic array pada assembly                    |      [Materi](basic/14_array)                |
+|   16    |           prosedur               |                      Memahami tentang basic prosedur pada assembly                    |      [Materi](basic/15_prosedur)             |
 
 ## installasi :desktop_computer:
 -  ![linux_badge](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
