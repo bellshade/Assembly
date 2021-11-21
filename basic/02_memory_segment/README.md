@@ -40,3 +40,5 @@ Mengingat penjelasan di atas, kita dapat menentukan berbagai segmen memori sebag
 - **stack**
 
     Segmen ini berisi nilai data yang diteruskan ke fungsi dan prosedur dalam program.
+
+[lanjut ke materi berikutnya (register)](../03_register)

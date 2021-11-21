@@ -177,3 +177,5 @@ maka output yang dihasilkan adalah
 menampilkan simbol ?
 ?????
 ```
+
+[lanjut ke materi berikutnya (pemanggilan sistem)](../04_pemanggilan_sistem)

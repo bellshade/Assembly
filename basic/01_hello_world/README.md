@@ -47,3 +47,4 @@ maka output yang tertampil adalah
 bellshade
 ```
 
+[lanjut ke materi berikutnya (segmentasi memori))](../02_memory_segment)
