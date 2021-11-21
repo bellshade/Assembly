@@ -1,4 +1,4 @@
-# Reskursif
+# Rekursif
 
 Prosedur rekursif adalah prosedur yang memanggil dirinya sendiri. Ada dua jenis rekursi: langsung dan tidak langsung. Dalam rekursi langsung, prosedur memanggil dirinya sendiri dan dalam rekursi tidak langsung, prosedur pertama memanggil prosedur kedua, yang pada gilirannya memanggil prosedur pertama.
 Rekursi dapat diamati dalam berbagai algoritma matematika. Misalnya, pertimbangkan kasus menghitung faktorial suatu bilangan. Faktorial suatu bilangan diberikan oleh persamaan.
