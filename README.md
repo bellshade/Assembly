@@ -28,6 +28,11 @@ Repositori ini berisi kumpulan source code serta tutorial dari bahasa [**assembl
 |   14    |              string              |                         Memahami tentang string pada assembly                         |      [Materi](basic/13_string)               |
 |   15    |              array               |                         Memahami tentang basic array pada assembly                    |      [Materi](basic/14_array)                |
 |   16    |           prosedur               |                      Memahami tentang basic prosedur pada assembly                    |      [Materi](basic/15_prosedur)             |
+|   17    |           rekursif               |                      Memahami tentang basic rekursif pada assembly                    |      [Materi](basic/16_rekursif)             |
+|   18    |             makro                |                      Memahami tentang basic makro                                     |      [Materi](basic/17_makro)                |
+|   19    |           manejemen file         |                      Memahami tentang basic tentang manajemen file                    |   [Materi](basic/18_manejemen_file)          |
+|   20    |           manajemen memori       |                      Memahami tentang basic manajemen memori                          |   [Materi](basic/19_manajemen_memori)        |
+
 
 ## installasi :desktop_computer:
 -  ![linux_badge](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
