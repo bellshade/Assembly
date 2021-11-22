@@ -33,7 +33,7 @@ Empat register data 32 bit digunakan untuk operasi aritmatika, logika, dan lainn
 
 - **AX adalah akumulator utama**
 
-  Digunakan dalam input/output dan sebagai besar instruksi aritmatika. Misalnya, dalam operasi perkalian, satu operan disimpan di register EAX atau AX atau AL sesuai dengan ukuran operan.
+  Digunakan dalam input/output dan sebagai besar instruksi aritmatika. Misalnya, dalam operasi perkalian, satu operan disimpan di register EAX, atau AX, atau AL sesuai dengan ukuran operan.
 
 - **BX dikenal sebagai register dasar**
   
@@ -57,7 +57,7 @@ Register penunjuk adalah register EIP, ESP, EBP 32 bit, dan bagian kanan 16 bit 
 
 2. **Stack Pointer (SP)**
 
-  Register SP 16 bit memberikan nilai offset dalam tumpukan program. SP dalam hubungannya dengan register SS (SS:SP) mengacu pada posisi data atau alamat saat ini dalam tumpukan program.
+  Register SP 16 bit memberikan nilai offset dalam tumpukan program. SP dalam hubungannya dengan register SS (SS:SP) mengacu pada posisi data, atau alamat saat ini dalam tumpukan program.
 
 3. **Base Pointer (BP)**
   
@@ -77,13 +77,13 @@ Banyak instruksi melibatkan perbandingan, perhitungan matematis, mengubah status
 
 Bit flag yang umum adalah :
 
-- **Overflow flag (OF)**
+- **Overflow Flag (OF)**
 
   Menunjukkan overflow dari bit orde tinggi (bit paling kiri) data setelah operasi arimatika yang ditandatangi.
 
 - **Direction Flag (DF)**
 
-Menentukan arah kiri atau kanan untuk memindahkan atau membandingkan data string. ketika nilai DF adalah 0, operasi string mengambil arah kiri- ke kanan, dan ketika nilai diatur ke 1, maka, operasi string mengambil arah kanan-ke-kiri.
+Menentukan arah kiri atau kanan untuk memindahkan, atau membandingkan data string. ketika nilai DF adalah 0, operasi string mengambil arah kiri- ke kanan, dan ketika nilai diatur ke 1, maka, operasi string mengambil arah kanan-ke-kiri.
 
 - **Interrupt Flag (IF)**
 
