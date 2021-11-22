@@ -87,7 +87,7 @@ Menentukan arah kiri atau kanan untuk memindahkan atau membandingkan data string
 
 - **Interrupt Flag (IF)**
 
-  Menentukan apakah interupsi eksternal seperti entri keyboard, dll., akan diabaikan atau diproses. Ini menonaktifkan interupsi eksternal saat nilainya 0, dan mengaktifkan interupsi saat disetel ke 1.
+  Menentukan apakah interupsi eksternal seperti entri keyboard, dll., akan diabaikan, atau diproses. Ini menonaktifkan interupsi eksternal saat nilainya 0, dan mengaktifkan interupsi saat disetel ke 1.
 
 - **Trap Flag (TF)**
 
