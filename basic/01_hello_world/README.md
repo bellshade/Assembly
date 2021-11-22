@@ -25,7 +25,7 @@ len     equ     $ -msg                  ; Membaca panjang dari string 'bellsahde
 
 Pastikan anda sudah menginstall NASM yang sebelumnya sudah diberitahukan, dan lakukan perintah dibawah ini untuk kompilasi program diatas, serta menampilkannya.
 
-- Pastikan kamu sudah save filenya dengan ekstensi `.asm`
+- Pastikan kamu sudah save filenya dengan ekstensi `.asm`.
 - Untuk satukan program lakukan perintah :
     ```
     nasm -f elf namafile.asm
