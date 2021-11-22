@@ -25,12 +25,12 @@ len     equ     $ -msg                  ; Membaca panjang dari string 'bellsahde
 
 Pastikan anda sudah menginstall NASM yang sebelumnya sudah diberitahukan, dan lakukan perintah dibawah ini untuk kompilasi program diatas, serta menampilkannya.
 
-- Pastikan kamu sudah save filenya dengan ekstensi ``.asm``
+- Pastikan kamu sudah save filenya dengan ekstensi `.asm`
 - Untuk satukan program lakukan perintah :
     ```
     nasm -f elf namafile.asm
     ```
-- Maka, file ``.o`` akan di create sesuai dengan nama file.
+- Maka, file `.o` akan di create sesuai dengan nama file.
 - Untuk link file object menjadi file yang bisa di eseskusi, gunakan linker yaitu dengan menggunakan perintah : 
     ```bash
     ld -m elf_i386 -s -o namafile namafile.o
