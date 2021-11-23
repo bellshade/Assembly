@@ -1,43 +1,44 @@
-## komentar
+## Komentar
 
-pada assembly komentar dimulai dengan menggunakan titik koma (semicolon) ``;`` dimana block ini tidak akan di esekusi
+Pada assembly komentar dimulai dengan menggunakan titik koma (semicolon) ``;`` dimana block ini tidak akan di eksekusi
 ```assembly
-; ini adalah contoh penggunaan dari komentar
+; Ini adalah contoh penggunaan dari komentar.
 ```
 
-## statement assembly
-bahasa assembly terdiri dari tiga jenis pernyataan:
+## Statement Assembly
+Bahasa Assembly terdiri dari tiga jenis pernyataan:
 
-- instruksi  atau instruksi yang dapat diesekusi
-- arahan assembler atau pseudo-ops
+- Instruksi  atau instruksi yang dapat diesekusi.
+- Arahan assembler atau pseudo-ops.
 - makro (macros)
 
-instruksi yang dapat diesekusi atau instruksi sederhana memberi tahu prosesor apa yang harus dilakukan. setiap instruksi terdiri dari sebuah kode operasi. setiap instruksi yang dapat dieksekusi meghasilkan satu instruksi bahasa mesin.
+Instruksi yang dapat dieksekusi, atau instruksi sederhana memberi tahu prosesor apa yang harus dilakukan. Setiap instruksi terdiri dari sebuah kode operasi. Setiap instruksi yang dapat dieksekusi meghasilkan satu instruksi bahasa mesin.
 
-arahan assembler atau pseudo-ops memberitahu assembler tentang berbagai aspek dari proses perakitan. ini tidak dapat dieksekusi dan tidak menghasilkan instruksi bahasa mesin.
+Arahan assembler, atau pseudo-ops memberitahu assembler tentang berbagai aspek dari proses perakitan. Ini tidak dapat dieksekusi dan tidak menghasilkan instruksi bahasa mesin.
 
-macros atau makro pada dasarnya adalah mekanisme subtitusi teks.
+macros, atau makro pada dasarnya adalah mekanisme subtitusi teks.
 
-## sintaks dari statement assembly
+## Syntax dari statement Assembly
 
-pernyataan bahasa assembly dimasukkan satu pernyataan perbaris. setiap pernyataan mengikuti format berikut
+Pernyataan bahasa Assembly dimasukkan satu pernyataan perbaris. Setiap pernyataan mengikuti format berikut :
 
 ```
 [label] mnmonic [operator] [; komentar]
 ```
-kolom dalam tanda kurung siku adalah opsional. sebuah instruksi dasar memiliki dua bagian, yang pertama adalah nama instruksi (``mnemonic``), yang akan dieksekusi, da yang kedua adalah operator atau parameter dari perintah
+Kolom dalam tanda kurung siku adalah opsional. Sebuah instruksi dasar memiliki dua bagian, yang pertama adalah nama instruksi (``mnemonic``), yang akan dieksekusi, dan yang kedua adalah operator atau parameter dari perintah.
 
-contoh perintah
+contoh perintah :
+
 ```assembly
-INC HITUNG  ; interasi memori dari variabel HITUNG
+INC HITUNG  ; Iterasi memori dari variabel HITUNG.
 
-MOV HASIL, 90   ; transfer nilai 48 di variabel memori HASIL
+MOV HASIL, 90   ; Transfer nilai 48 di variabel memori HASIL.
 
-ADD AH, BH ; menambahkan isi register BH ke register AH
+ADD AH, BH ; Menambahkan isi register BH ke register AH.
 
-AND ANGKASAYA, 128 ; lakukan operasi AND pada variabel ANGKA SAYA dan 128
+AND ANGKASAYA, 128 ; Lakukan operasi AND pada variabel ANGKA SAYA, dan 128.
 
-AND CONTOH, 10 ; menambahkan 10p pada variabel CONTOH
+AND CONTOH, 10 ; Menambahkan 10p pada variabel CONTOH.
 
-MOV AL , 10 ; trasnsfer 10 ke register AL
+MOV AL , 10 ; Trasnsfer 10 ke register AL.
 ```
