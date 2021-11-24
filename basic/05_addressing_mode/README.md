@@ -1,94 +1,101 @@
-# adressing mode
+# Adressing Mode
 
-kebanyakan instruksi bahasa assembly membutuhkan operand untuk diproses. alamat operan menyediakan lokasi, di mana data yang akan diproses disimpan. Beberapa instruksi tidak memerlukan operan, sedangkan beberapa instruksi lain mungki memerlukan stau, dua atau tiga operan.
+Kebanyakan instruksi bahasa assembly membutuhkan operand untuk diproses. Alamat operand menyediakan lokasi, dimana data yang akan diproses disimpan. Beberapa instruksi tidak memerlukan operan, sedangkan beberapa instruksi lain mungkin memerlukan atau, dua, atau tiga operand.
 
-ketika sebuah instruksi membutuhkan dua operan, operan pertama ummumnya adalah tujuan,yang berisi data dalam register atau lokasi memori dan operan kedua adalah sumbernya.  sumber yang berisi data yang akan dikirim (pengelamatan langsung) atau alamat (dalam register atau memori) data. umumnya, data sumber tetap tidak berubah setelah operasi.
+Ketika sebuah instruksi membutuhkan dua operan, operand pertama ummumnya adalah tujuan, yang berisi data dalam register atau lokasi memori, dan operan kedua adalah sumbernya. Sumber yang berisi data yang akan dikirim (pengalamatan langsung), atau alamat (dalam register, atau memori) data. Umumnya, data sumber tetap tidak berubah setelah operasi.
 
-ada tiga mode dasar addressing mode adalah:
+Ada tiga mode dasar addressing mode adalah :
 
-1. alamat register
-2. pengelamatan langsung
-3. pengelamatan memori
+1. Alamat register
+2. Pengelamatan langsung
+3. Pengelamatan memori
 
-## daftar alamat
+## Daftar Alamat
 
-dalam mode pengelamatan ini, sebuah registerberisi operan. tergantung pada instruksinya, register dapat berupa operan pertama, operan kedua atau keduanya
+Dalam mode pengelamatan ini, sebuah register berisi operan. Tergantung pada instruksinya, register dapat berupa operand pertama, operan kedua, atau keduanya.
 
-sebagai contoh
+Sebagai contoh :
 
 ```assembly
-mov     DX, hitung_hasil        ; register pada operan pertama
-mov     COUNT, CX               ; register pada operan kedua
-mov     EAX, EBX                ; kedua operan dalam register
+mov     DX, hitung_hasil        ; register pada operan pertama.
+mov     COUNT, CX               ; register pada operan kedua.
+mov     EAX, EBX                ; Kedua operan dalam register.
 ```
-karena pemrosesan data antar register tidak melibatkan memori, ini menyediakan pemgrosesan data tercepat
+Karena pemrosesan data antar register tidak melibatkan memori, ini menyediakan pemrosesan data tercepat.
 
-## alamat langsung
+## Alamat Langsung
 
-operand langsung memiliki nilai konsisten atau ekspresi. ketika sebuah instruksi dengan dua memori, dan operan kedua adalah konstanta langsung. operand pertama mendefinisikan panjang data.
+Operand langsung memiliki nilai konsisten atau ekspresi. Ketika sebuah instruksi dengan dua memori, dan operand kedua adalah konstanta langsung. Operand pertama mendefinisikan panjang data.
 
-sebagai contoh
+Sebagai contoh :
+
 ```assembly
-BYTE_VALUE      DB  150     ; value byte yang sudah di buat
-WORD_VALUE      DW  300     ; value huruf yang sudah di buat
-ADD     BYTE_VALUE, 65      ; operan yang langsung ditambahkan 65
-MOV             AX, 45      ; konstanta langsung 45H ditransfer ke AX
-```
-
-## direct addressing memori
-
-ketika operan ditentukan dalam mode direct addressing memory, akses langsung ke memori utama, biasanya ke segmen data, diperlukan. cara adressing ini menghasilkan pemrosesan data yang lebih lambat. untuk menemukan lokasi yang tepat dari data dalam memori, kita memerlukan alamat awal segmen, yang biasanya ditemukan di register DS, dan nilai offset. nilai offset ini juga disebut alamat efektif (**effective adressing**)
-
-dalam mode __direct addressing memmory__, nilai offset ditentukan secar alangsung sebagai bagian dari instruksi, biasanya ditunjukkan dengan nama variabel. assembler meghitung nilai offset dan memelihara tabel simbol, yang menyimpan nilai offset dari semua variabel yang digunakan dalam program.
-
-dalam direct addressing memori, sala satu operan merujuk ke lokasi memori dan operan lainnya merujuk ke register.
-
-sebagai contoh
-```assembly
-ADD     BYTE_VALUE, DL      ; menambahkan register ke dalam register memori
-MOV     BX, WORD_VALUE      ; operan dari memori telah ditambahkan ke dalam register
+BYTE_VALUE      DB  150     ; value byte yang sudah dibuat.
+WORD_VALUE      DW  300     ; value huruf yang sudah dibuat.
+ADD     BYTE_VALUE, 65      ; operan yang langsung ditambahkan 65.
+MOV             AX, 45      ; konstanta langsung 45H ditransfer ke AX.
 ```
 
-## direct offset addressing
+## Direct Addressing Memori
 
-mode ini menggunakan operator aritmatika untuk megubah alamat. misalnya, lihat definisi berikut yang mendifinisikan tabel angka
+Ketika operand ditentukan dalam mode direct addressing memory, akses langsung ke memori utama, biasanya ke segmen data diperlukan. Cara addressing ini menghasilkan pemrosesan data yang lebih lambat. Untuk menemukan lokasi yang tepat dari data dalam memori, kita memerlukan alamat awal segmen, yang biasanya ditemukan di register DS, dan nilai offset. Nilai offset ini juga disebut alamat efektif (**effective adressing**).
+
+Dalam mode __direct addressing memmory__, nilai offset ditentukan secara langsung sebagai bagian dari instruksi, biasanya ditunjukkan dengan nama variabel. Assembler menghitung nilai offset, dan memelihara tabel simbol, yang menyimpan nilai offset dari semua variabel yang digunakan dalam program.
+
+Dalam direct addressing memori, salah satu operan merujuk ke lokasi memori, dan operan lainnya merujuk ke register.
+
+Sebagai contoh :
+
 ```assembly
-BYTE_TABLE      DB  14, 15, 22, 45          ; tabel dari byte
-WORD_TABLE      DW  134, 345, 564, 123      ; tebel dari huruf
+ADD     BYTE_VALUE, DL      ; Menambahkan register ke dalam register memori.
+MOV     BX, WORD_VALUE      ; Operand dari memori telah ditambahkan ke dalam register.
 ```
 
-operasi berikut mengakses data dari tabel di memori ke dalam register
+## Direct Offset Addressing
+
+Mode ini menggunakan operator aritmatika untuk megubah alamat. Misalnya, lihat definisi berikut yang mendifinisikan tabel angka : 
+
 ```assembly
-MOV CL, BYTE_TABLE[2]       ; ambil element ketiga dari BYTE_TABLE
-MOV CL, BYTE_TABLE + 2      ; ambil element ketiga dari BYTE_TABLE
-MOV CX, WORD_TABLE[1]       ; ambil element kedua dari WORD_TABLE
-MOV CX, WORD_TABLE + 3      ; ambil element keempat dari WORD_TABLE
+BYTE_TABLE      DB  14, 15, 22, 45          ; Tabel dari byte.
+WORD_TABLE      DW  134, 345, 564, 123      ; Tabel dari huruf.
 ```
 
-## indirect memmory addressing
+Operasi berikut mengakses data dari tabel di memori ke dalam register :
 
-mode ini memanfaatkan kemampuan komputer untuk addressing, __segment: offset__. umumnya, register dasar EBX, EBP (atau BX, BP) dan register index (DI, SI), dikodekan dalam tanda kurung siku untuk referensi memori, digunakan untuk tujuan ini.
-
-indirect addressing tidak langsung umumnya digunakan untuk variabel yang mengandung beberapa elemen seperti array, alamat awal array disimpan dalam, katakanlah, register EBX
-
-contoh kode berikut menunjukkan cara mengakses berbagai elemen variabel
 ```assembly
-TABEL_SAYA TIMES 10 DW 0        ; alokasi 10 WORD (2 byte)
-MOV EBX, [TABEL_SAYA]           ; effective aaddresing dari TABEL_SAYA
+MOV CL, BYTE_TABLE[2]       ; Ambil element ketiga dari BYTE_TABLE.
+MOV CL, BYTE_TABLE + 2      ; Ambil element ketiga dari BYTE_TABLE.
+MOV CX, WORD_TABLE[1]       ; Ambil element kedua dari WORD_TABLE.
+MOV CX, WORD_TABLE + 3      ; Ambil element keempat dari.WORD_TABLE
+```
+
+## Indirect Memmory Addressing
+
+Mode ini memanfaatkan kemampuan komputer untuk addressing, __segment: offset__. Umumnya, register dasar EBX, EBP (atau BX, BP), dan register index (DI, SI), dikodekan dalam tanda kurung siku untuk referensi memori, digunakan untuk tujuan ini.
+
+Indirect addressing tidak langsung umumnya digunakan untuk variabel yang mengandung beberapa elemen seperti array, alamat awal array yang disimpan, katakanlah, register EBX.
+
+Contoh kode berikut menunjukkan cara mengakses berbagai elemen variabel :
+
+```assembly
+TABEL_SAYA TIMES 10 DW 0        ; Alokasi 10 WORD (2 byte).
+MOV EBX, [TABEL_SAYA]           ; Effective addresing dari TABEL_SAYA.
 MOV [EBX], 110                  ; TABEL_SAYA[0] = 110
 ADD EBX, 2                      ; EBX = EBX + 2
 MOV [EBX], 123                  ; TABEL_SAYA[1] = 123
 ```
 
-## instruksi MOV
+## Instruksi MOV
 
-kita telah menggunakan instruksi ``MOV``yang digunakan untuk memindahkan data dari satu ruang penyimpanan ke ruang penyimpanan lainnya, instruksi ``MOV`` membutuhkan dua operand
+Kita telah menggunakan instruksi ``MOV``yang digunakan untuk memindahkan data dari satu ruang penyimpanan ke ruang penyimpanan lainnya, instruksi ``MOV`` membutuhkan dua operand.
+Contohnya :
 
-contoh
 ```assebmly
 MOV     TUJUAN, SUMBER
 ```
-instruksi mungkin memiliki salah satu dari lima bentuk berikut
+
+Instruksi mungkin memiliki salah satu dari lima bentuk berikut :
+
 ```
 MOV register, register
 MOV register, immediate
@@ -97,18 +104,20 @@ MOV register, memori
 MOV memori, register
 ```
 
-noted:
-- kedua operan dalam operasi mov harus berukuran sama
-- nilai operan sumber tetap tidak berubah
+Noted:
+- Kedua operan dalam operasi mov harus berukuran sama.
+- Nilai operan sumber tetap tidak berubah.
 
-instruksi MOV terkadang menyebabkan ambiguitas. sebagai contoh, perhatikan contoh kode dibvawah ini
+Instruksi MOV terkadang menyebabkan ambiguitas. Sebagai contoh, perhatikan contoh kode dibawah ini :
+
 ```assembly
-MOV EBX, [TABEL_SAYA]       ; effective address dari TABEL_SAYA di EBX
+MOV EBX, [TABEL_SAYA]       ; Effective address dari TABEL_SAYA di EBX.
 MOV [EBX], 110              ; TABEL_SAYA[0] = 110
 ```
-tidak jelas apakah kamu ingin memindahkan __byte__ yang setara atua setara kata dengan angka ``110``, dalam kasus ini, sebaiknay menggunakan **type specifier**
 
-tabel beriku menunjukkan beberapa penentu tipe umum
+Tidak jelas apakah kamu ingin memindahkan __byte__ yang setara atau setara kata dengan angka ``110``, dalam kasus ini, sebaiknya menggunakan **type specifier**.
+
+Tabel berikut menunjukkan beberapa penentu tipe umum, yaitu :
 
 | **type specifier**        | **byte yang ditunjukkan** |
 | -------------             |:-------------------------:|
@@ -119,38 +128,39 @@ tabel beriku menunjukkan beberapa penentu tipe umum
 | TBYTE                     | 10                        |
 
 
-contoh
-
-program berikut mengilustrasikan beberapa konsep yang dibahas diatas, menyimpan nama '**jole**' di bagian data moemori, kemudian mengubah nilainya menjadi nama lain '**jolesles**' secara terpogram dan menampilkan kedua nama tersebut
+Contoh :
+Program berikut mengilustrasikan beberapa konsep yang dibahas diatas, menyimpan nama '**jole**' di bagian data memori, kemudian mengubah nilainya menjadi nama lain '**jolesles**', secara terpogram, dan menampilkan kedua nama tersebut.
 
 ```assembly
 section .text
     global _start
 
 _start:
-    ; membuat nama 'jole'
-    mov     edx, 9      ; panjang dari pesan
-    mov     ecx, nama   ; pesan yang akan ditulis
-    mov     ebx, 1      ; stdout
-    mov     eax, 5      ; sys_write
-    int     0x80        ; memanggil kernel
+    ; Membuat nama 'jole'
+    mov     edx, 9      ; Panjang dari pesan.
+    mov     ecx, nama   ; Pesan yang akan ditulis.
+    mov     ebx, 1      ; stdout.
+    mov     eax, 5      ; sys_write.
+    int     0x80        ; Memanggil kernel.
 
-    mov     [nama], dword   'jolesles'  ; mengganti ke jolesles
+    mov     [nama], dword   'jolesles'  ; Mengganti ke jolesles.
 
-    ; membuat nama paraditto
-    mov     edx, 8      ; panjang dari pesan
-    mov     ecx, nama   ; pesan yang akan ditulis
-    mov     ebx, 1      ; stdout
-    mov     eax, 4      ; sys_write
-    int     0x80        ; memanggil kernel
+    ; Membuat nama paraditto
+    mov     edx, 8      ; Panjang dari pesan.
+    mov     ecx, nama   ; Pesan yang akan ditulis.
+    mov     ebx, 1      ; stdout.
+    mov     eax, 4      ; sys_write.
+    int     0x80        ; Memanggil kernel.
 
-    mov     eax, 1      ; sys_exit
-    int     0x80        ; memanggil kernel
+    mov     eax, 1      ; sys_exit.
+    int     0x80        ; Memanggil kernel.
 
 section .data
 nama db 'paraditto '
 ```
-dengan merakit dan menjalankannya
+
+Dengan merakit dan menjalankannya :
+
 ```bash
 nasm -f elf32 -o namafile.o namafile.asm
 ld -m elf_i386 -o namafile namafile.o
