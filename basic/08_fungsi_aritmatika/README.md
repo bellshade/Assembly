@@ -1,10 +1,11 @@
-# fungsi artimatika
+# Fungsi Aritmatika
 
-## instruksi INC
+## Instruksi INC
 
-instruksi ``INC`` digunakan untuk menambah operan satu per satu. inc bekerja pada operan tunggal yang dapat berupa register atau memori.
+Instruksi ``INC`` digunakan untuk menambah operand satu per satu. inc bekerja pada operand tunggal yang dapat berupa register, atau memori.
 
-contoh dari sintaks
+Contoh dari syntax :
+
 ```assembly
 INC     dest
 ```
@@ -14,11 +15,12 @@ INC     DL          ; incr 8 bit register
 INC     [hitung]    ; incr variabel hitung
 ```
 
-## instruksi DEC
+## Instruksi DEC
 
-instruksi ``DEC`` digunakan untuk mengurangi operand satu per satu. ia bekerja pada opean tunggal yang dapat berupa register atau memori.
+Instruksi ``DEC`` digunakan untuk mengurangi operand satu per-satu. Ia bekerja pada operand tunggal yang dapat berupa register, atau memori.
 
-contoh
+Contoh :
+
 ```assembly
 segment .data
     count   dw  0
@@ -35,26 +37,27 @@ segment .text
     dec     byte    [esi]
 ```
 
-## instruksi ADD dan SUB
+## Instruksi ADD dan SUB
 
-instruksi ``ADD`` dan ``SUB`` digunakan untuk melakukan penjumlah pengurang sederhana dari data biner dalam ukuran byte, word dandouble word, yaitu untuk menambah atau mengurangi operand 8 bit, 16 bit, atau 32 bit, masing-masing.
+Instruksi ``ADD`` dan ``SUB`` digunakan untuk melakukan penjumlah pengurang sederhana dari data biner dalam ukuran byte, word dandouble word, yaitu untuk menambah, atau mengurangi operand 8 bit, 16 bit, atau 32 bit, masing-masing.
 
-contoh sintaks
+Contoh syntax :
+
 ```assembly
 ADD/SUB     destination, source
 ```
 
-instruksi ``ADD/SUB`` dapat dilakukan antara
+Instruksi ``ADD/SUB`` dapat dilakukan, antara lain :
 - __register__
 - __memmory__ untuk __register__
 - __register__ untuk __memmory__
 - __register__ untuk __constant__
 - __memmory__ untuk __constant__
 
-namun, seperti instruksi lainnya, operasi memori ke memori tidak dimungkinkan menggunakan instruksi ``add/sub``. operasi ``add`` dan ``sub`` mengatur atau menghapus flag overflow dan carry.
+Namun, seperti instruksi lainnya, operasi memori ke memori tidak dimungkinkan menggunakan instruksi ``add/sub``. Operasi ``add``, dan ``sub`` mengatur, atau menghapus flag overflow, dan carry.
 
-contoh
-contoh berikut akan meminta dua digit dari pengguna, menyimpan digit masing-masing di register ``EAX`` dan ``EBX``, menambah nilai, menyimpan hasilnya di lokasi memori, ``res`` dan akhirnya menampilkan hasilnya
+Contoh :
+Contoh berikut akan meminta dua digit dari pengguna, menyimpan digit masing-masing di register ``EAX``, dan ``EBX``, menambah nilai, menyimpan hasilnya di lokasi memori, ``res``, dan akhirnya menampilkan hasilnya.
 
 ```assembly
 SYS_EXIT  equ 1
@@ -180,18 +183,19 @@ section .data
     sum resb    1
 ```
 
-## instruksi MUL/IMUL
+## Instruksi MUL/IMUL
 
-ada dua instruksi untuk mngalikan data biner. instruksi MUL (multiply) mengami data yang tidak ditandatangi dengan IMUL (integer multiply) menangani data yang ditandatangi. kedua instruksi mempengaruhi flag carry dan overflow
+Ada dua instruksi untuk mngalikan data biner. Instruksi MUL (multiply) mengambil data yang tidak ditandatangani dengan IMUL (integer multiply) menangani data yang ditandatangani. Kedua instruksi mempengaruhi flag carry, dan overflow.
 
 sintaks
 ```assembly
 MUL/IMUL  perkalian
 ```
 
-MUL dalam kedua kasus akan berada di akumulator, tergantung pada ukuran multiplicand dan multiplier dan produk yag dihasilkan juga akan disimpan dalam dua register tergantung pada ukuran operan
+MUL dalam kedua kasus akan berada di akumulator, tergantung pada ukuran multiplicand, multiplier, dan produk yang dihasilkan juga akan disimpan dalam dua register tergantung pada ukuran operand.
 
-contoh
+Contoh :
+
 ```assembly
 MOV AL, 10
 MOV DL, 25  
@@ -201,7 +205,7 @@ MOV DL, 0FFH
 MOV AL, 0BEH
 IMUL DL
 ```
-contoh berikut mengailkan 3 ddengan 3 dan menampilkan
+Contoh berikut mengalikan 3 dengan 3, dan menampilkan :
 
 ```assembly
 section	.text

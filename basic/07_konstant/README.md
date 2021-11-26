@@ -1,6 +1,6 @@
-# konstant
+# Konstant
 
-Ada beberapa arahan yang disediakan oleah NASM yang mendefinisikan kostanta. kita telah menggunakan directive EQU di tutorial sebelumnya. kita seara khusus akan membahas tiga arahan
+Ada beberapa arahan yang disediakan oleah NASM yang mendefinisikan kostanta. Kita telah menggunakan directive EQU di tutorial sebelumnya. Kita secara khusus akan membahas tiga arahan, yaitu :
 
 - EQU
 - %assign
@@ -8,31 +8,34 @@ Ada beberapa arahan yang disediakan oleah NASM yang mendefinisikan kostanta. kit
 
 ## EQU directive
 
-EQU digunakan untuk mendifinisikan kostanta. sintaks dari directif EQU adalah sebagai berikut
+EQU digunakan untuk mendifinisikan kostanta. Syntax dari directif EQU adalah sebagai berikut :
 
 ```
 NAMA_CONSTANT EQU expression
 ```
 
-sebagai contoh
+Sebagai contoh :
+
 ```assembly
 JUMLAH_KOMPUTER EQU 20
 ```
 
-kita juga bisa menggunakan nilai konstan di dalam kode seperti
+Kita juga bisa menggunakan nilai konstan di dalam kode, seperti :
+
 ```assembly
 mov     ecx,    JUMLAH_KOMPUTER
 cmp     eax,    JUMLAH_KOMPUTER
 ```
-operand dari pernyataan EQU dapat berupa expression
+Operand dari pernyataan EQU dapat berupa expression, seperti :
+
 ```assembly
 PANJANG         EQU 20
 LEBAR           EQU 10
 LUAS_AREA       EQU PANJANG * LEBAR
 ```
-kode diatas mendifinisikan LUAS_AREA sebagai 200 karena hasil dari perkalan antara 20 * 100
+Kode diatas mendifinisikan LUAS_AREA sebagai 200 karena hasil dari perkalan antara 20 * 100.
 
-contoh berikut dari penggunaan EQU
+Contoh berikut dari penggunaan EQU, yaitu :
 
 ```assembly
 SYS_EXIT        EQU     1
@@ -78,7 +81,7 @@ panjang_pesan3 equ $ - pesan3
 
 ## %assign directive
 
-the %assign directive dapat digunakan untuk mendifinisikan konstanta numerik sperti directive EQU. ini memungkinkan redefinisi. misalnya, dapat mendifinisikan konstanta total sebagai
+The %assign directive dapat digunakan untuk mendifinisikan konstanta numerik sperti directive EQU. Ini memungkinkan redefinisi. misalnya, dapat mendifinisikan konstanta total sebagai :
 
 ```
 %assign         TOTAL 10
@@ -86,11 +89,10 @@ the %assign directive dapat digunakan untuk mendifinisikan konstanta numerik spe
 
 ## %define directive
 
-%define directive memungkinkan mendefinisikan kedua konstanta numerik. arah ini mirip dengan ``#defina`` pada C. misalnya, dapat mendifinisikan kostanta sebagai
+%define directive memungkinkan mendefinisikan kedua konstanta numerik. Arah ini mirip dengan ``#defina`` pada C. misalnya, dapat mendifinisikan kostanta sebagai :
 
 ```
 %define         PTR [EBP + 4]
 ```
 
-kode diatas menggantikan PTR dengan [EBP + 4]
-
+kode diatas menggantikan PTR dengan [EBP + 4].
