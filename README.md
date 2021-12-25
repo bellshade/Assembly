@@ -1,4 +1,4 @@
-# Assembly
+# Assembly :abacus:
 
 <p align="center">
     <img src="https://64.media.tumblr.com/0b59866d4f23e8ab39804c5a7968725a/f1bfad800d8ac6c6-2c/s1280x1920/46ea723ba1703102f52abc356bc55f8c33ed0e48.gifv" width="600" height="400">
@@ -88,4 +88,14 @@ Repositori ini berisi kumpulan source code serta tutorial dari bahasa [**assembl
     sebelumnya install terlebih dahulu codeblocks [disini](https://www.codeblocks.org/downloads/)
 
     untuk tutorial lebih lanjut bisa diliat [disini](https://www.wikihow.com/Run-NASM-on-Windows)
+
+# :star_struck: Ayo ikut kami dan berkontribusi :star_struck:
+
+Bantuan kalian diperlukan agar berllshade dapat lebih jauh lagi membantu anak-anak indonesia belajar _programming_,
+
+> "Dengan bellshade, aku jadi bisa _ngodin_! Terima kasih Bellshade!"
+
+Kami sangat senang bila kalian ingin melakukan kontribusi pada repositori **assembly** ini. Tapi, sebelum itu, silaahkan baacaa terlebih dahulu [peraturan dan pedomnny](CONTRIBUTING.md) yang telah kami siapkan. Terima kasih.
+
+Untuk informasi lebih lanjut, mari gabung dalam komunitas [Discord Channel WPU](http://discord.gg/S4rrXQU)
 
