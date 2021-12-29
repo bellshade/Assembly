@@ -2,7 +2,7 @@
     <img src="https://c.tenor.com/3bTxZ4HdrysAAAAC/pixels-neon.gif">
 </p>
 
-# assembly
+# assembly :abacus:
 bahasa assembly atau bahasa rakitan adalah bahasa pemograman tingkat rendah yang digunakan dalam pemograman komputer, mikroprosesor, pengendali mikro, dan perangkat lainnya yang dapat diprogram.
 
 ada beberapa dasar alasan menggunakan bahasa rakita dari sudut pandang penggunaanya:
@@ -18,7 +18,7 @@ dalam pemograman komputer bahasa assembly kadang-kadang disingkat asm, adalah ba
 
 kode perakitan diubah menjadi kode mesin yang dapat dieksekusi oleh program utilitas yang disebut dengan assembler.kata __assembler__ ini umumnya dikaitkan dengan willkes, wheller dan gill dalam buku tahun 1951 ciptaan mereka dalam __persiapan program untuk komputer digital elektronik__, yang bagaimanapun, menggunakan istilah berarti "sebuah program yang merakit program lain yang terdiri dari beberapa bagiuan menjadi satu program".
 
-## sejarah dari bahasa assembly
+## sejarah dari bahasa assembly :date:
 
 bahasa rakitan diperkenalkan ``kathleen booth`` berdasarkan karya teoritis yang dia mulai pada tahun 1947, saat bekerja di ARC2 di Birkbeck, university of london.
 
@@ -32,7 +32,7 @@ bahasa assembly pernah banyak digunakan untuk semua jenis pemograman. namun, pad
 
 secara historis, banyak program telah ditulis seluruhnya dalam bahasa assembly. **the burroghs mcp (1961)** adalahh komputer pertama  yang sistem operasi tidak dikembangkan sepenuhnya dalam bahasa assembly.
 
-## aplikasi umum dan penggunaan saat ini
+## aplikasi umum dan penggunaan saat ini :computer:
 
 - bahasa assembly biasanya digunakan dalam kode boot sistem, kode tingkat rendah yang menginisialiasi dan menguji perangkat keras sistem sebelum mem-boot sistem operasi dan sering disimpan ke dalam *ROM* (**BIOS** pada sistem pc yang kompatibel dengan IBM dan CP/M adalah contohnya).
 - bahasa assembly sering digunakan untuk kode tingkat rendah, misalnya untuk **kernel sistem operasi**, yang tidak dapat mengandalkan ketersediaan panggilan sistem yang sudah ada sebelumnya dan memang harus mengimplementasikannya untuk arsitektur prosesor tertentu di mana sistem akan berjalan.
