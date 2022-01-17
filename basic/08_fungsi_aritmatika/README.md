@@ -144,7 +144,7 @@ exit:
     int 0x80
 ```
 
-contoh menambahkan 2 variabel
+Contoh menambahkan 2 variabel
 
 ```assembly
 section .text
@@ -185,7 +185,7 @@ section .data
 
 ## Instruksi MUL/IMUL
 
-Ada dua instruksi untuk mngalikan data biner. Instruksi MUL (multiply) mengambil data yang tidak ditandatangani dengan IMUL (integer multiply) menangani data yang ditandatangani. Kedua instruksi mempengaruhi flag carry, dan overflow.
+Ada dua instruksi untuk mengalikan data biner. Instruksi MUL (multiply) mengambil data yang tidak ditandatangani dengan IMUL (integer multiply) menangani data yang ditandatangani. Kedua instruksi mempengaruhi flag carry, dan overflow.
 
 sintaks
 ```assembly
