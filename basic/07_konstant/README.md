@@ -1,6 +1,6 @@
 # Konstant
 
-Ada beberapa arahan yang disediakan oleah NASM yang mendefinisikan kostanta. Kita telah menggunakan directive EQU di tutorial sebelumnya. Kita secara khusus akan membahas tiga arahan, yaitu :
+Ada beberapa arahan yang disediakan oleh NASM yang mendefinisikan kostanta. Kita telah menggunakan directive EQU di tutorial sebelumnya. Kita secara khusus akan membahas tiga arahan, yaitu :
 
 - EQU
 - %assign
@@ -8,7 +8,7 @@ Ada beberapa arahan yang disediakan oleah NASM yang mendefinisikan kostanta. Kit
 
 ## EQU directive
 
-EQU digunakan untuk mendifinisikan kostanta. Syntax dari directif EQU adalah sebagai berikut :
+EQU digunakan untuk mendefinisikan kostanta. Syntax dari directif EQU adalah sebagai berikut :
 
 ```
 NAMA_CONSTANT EQU expression
@@ -33,7 +33,7 @@ PANJANG         EQU 20
 LEBAR           EQU 10
 LUAS_AREA       EQU PANJANG * LEBAR
 ```
-Kode diatas mendifinisikan LUAS_AREA sebagai 200 karena hasil dari perkalan antara 20 * 100.
+Kode diatas mendefinisikan LUAS_AREA sebagai 200 karena hasil dari perkalan antara 20 * 100.
 
 Contoh berikut dari penggunaan EQU, yaitu :
 
@@ -81,7 +81,7 @@ panjang_pesan3 equ $ - pesan3
 
 ## %assign directive
 
-The %assign directive dapat digunakan untuk mendifinisikan konstanta numerik sperti directive EQU. Ini memungkinkan redefinisi. misalnya, dapat mendifinisikan konstanta total sebagai :
+The %assign directive dapat digunakan untuk mendefinisikan konstanta numerik seperti directive EQU. Ini memungkinkan redefinisi. misalnya, dapat mendefinisikan konstanta total sebagai :
 
 ```
 %assign         TOTAL 10
@@ -89,7 +89,7 @@ The %assign directive dapat digunakan untuk mendifinisikan konstanta numerik spe
 
 ## %define directive
 
-%define directive memungkinkan mendefinisikan kedua konstanta numerik. Arah ini mirip dengan ``#defina`` pada C. misalnya, dapat mendifinisikan kostanta sebagai :
+%define directive memungkinkan mendefinisikan kedua konstanta numerik. Arah ini mirip dengan ``#defina`` pada C. Misalnya, dapat mendefinisikan kostanta sebagai :
 
 ```
 %define         PTR [EBP + 4]
