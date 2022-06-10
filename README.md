@@ -93,7 +93,7 @@ Repositori ini berisi kumpulan source code serta tutorial dari bahasa [**assembl
 
 Bantuan kalian diperlukan agar berllshade dapat lebih jauh lagi membantu anak-anak indonesia belajar _programming_,
 
-> "Dengan bellshade, aku jadi bisa _ngodin_! Terima kasih Bellshade!"
+> "Dengan bellshade, aku jadi bisa _ngoding_! Terima kasih Bellshade!"
 
 Kami sangat senang bila kalian ingin melakukan kontribusi pada repositori **assembly** ini. Tapi, sebelum itu, silaahkan baacaa terlebih dahulu [peraturan dan pedomnny](CONTRIBUTING.md) yang telah kami siapkan. Terima kasih.
 
