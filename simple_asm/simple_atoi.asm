@@ -1,5 +1,7 @@
 ;program untuk menconvert input dari user menjadi angka karena input yang di dapat
 ;berupa karakter ascii bukan angka
+;atau program ini atoi pada bahasa c dengan versi saya sendiri
+;algoritmanya adalah kali sepuluh hasil yang ditampung terus ditambah dengan digit baru
 
 
 section .data
