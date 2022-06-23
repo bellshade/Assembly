@@ -43,7 +43,7 @@ get_char:
 	jmp get_char
 
 
-	;hasil nya berada pada register eax tepatnya di al
+	;hasil nya berada pada register eax tepatnya di al berukuran 1 byte
 end:
 	mov eax,1
 	mov ebx,0
