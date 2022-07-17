@@ -14,7 +14,7 @@ Repositori ini berisi kumpulan source code serta tutorial dari bahasa [**assembl
 | :-----: | :------------------------------: | :-----------------------------------------------------------------------------------: | :----------------------------------:         |
 |   01    | pemahaman dari bahasa assembly   | Memahami konsep dasar dari pemograman assembly sebelum masuk ke langkah berikutnya    |  [Materi](basic/00_pemahaman)                |
 |   02    |            hello world!          |                              Hello world !                                            |     [Materi](basic/01_hello_world)           |
-|   03    |          semegmentasi memori     |                 Memahami konsep dasar segmentasi memori                               |      [Materi](basic/02_memmory_segment)      |
+|   03    |          semegmentasi memori     |                 Memahami konsep dasar segmentasi memori                               |      [Materi](basic/02_memory_segment)      |
 |   04    |             register             |                      Memahami konsep dari register pada assembly                      |      [Materi](basic/03_register)             |
 |   05    |         pemanggilan sistem       |                         Memahami konsep dasar pemanggilan sistem assembly             |       [Materi](basic/04_pemanggilan_sistem)  |
 |   06    |         mode adressing           |                        Memahami dari mode adressing assembly                          |    [Materi](basic/05_addressing_mode)        |
