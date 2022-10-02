@@ -75,7 +75,7 @@ Repositori ini berisi kumpulan source code serta tutorial dari bahasa [**assembl
     ```bash
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 2> /dev/null
     ```
-    kemudian jalan berintah
+    kemudian jalankan perintah
     ```bash
     brew install nasm
     ```
@@ -95,7 +95,7 @@ Bantuan kalian diperlukan agar berllshade dapat lebih jauh lagi membantu anak-an
 
 > "Dengan bellshade, aku jadi bisa _ngoding_! Terima kasih Bellshade!"
 
-Kami sangat senang bila kalian ingin melakukan kontribusi pada repositori **assembly** ini. Tapi, sebelum itu, silaahkan baacaa terlebih dahulu [peraturan dan pedomnny](CONTRIBUTING.md) yang telah kami siapkan. Terima kasih.
+Kami sangat senang bila kalian ingin melakukan kontribusi pada repositori **assembly** ini. Tapi, sebelum itu, silahkan baca terlebih dahulu [peraturan dan pedomannya](CONTRIBUTING.md) yang telah kami siapkan. Terima kasih.
 
 Untuk informasi lebih lanjut, mari gabung dalam komunitas [Discord Channel WPU](http://discord.gg/S4rrXQU)
 
