@@ -32,8 +32,8 @@ palindrome_start:
     dec rcx
     jmp palindrome_start
 
+; Fungsi jika string tidak palindrome
 palindrome_gagal:
-    ; Fungsi jika string tidak palindrome
     mov rax, 0
 
 ; Fungsi untuk mengakhiri megecek palindrome
