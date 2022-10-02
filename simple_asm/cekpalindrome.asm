@@ -4,7 +4,6 @@ extern printf
 section .text
 
 ; Membuat fungsi untuk mengecek palindrome
-
 is_palindrome:
     push rbp
     mov rbp, rsp
