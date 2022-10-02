@@ -1,3 +1,5 @@
+; contoh program perpangkat dengan assembly 8086
+
 power macro n,p 
     push p 
     cmp p,01h
