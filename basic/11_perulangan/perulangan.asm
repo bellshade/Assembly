@@ -6,7 +6,7 @@ _start:
     mov     eax, '1'
     
 l1:
-    mov [angka], eax
+    mov [num], eax
     mov eax, 4
     mov ebx, 1
     push ecx
@@ -15,9 +15,10 @@ l1:
     mov edx, 1
     int 0x80
 
-    mov eax, [angka]
+    mov eax, [num]
     sub eax, '0'
-    inc eax, '0'
+    inc eax
+    add eax, '0'
     pop ecx
     loop l1
 
