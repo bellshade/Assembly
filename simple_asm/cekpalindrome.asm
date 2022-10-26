@@ -4,7 +4,6 @@ extern printf
 section .text
 
 ; Membuat fungsi untuk mengecek palindrome
-
 is_palindrome:
     push rbp
     mov rbp, rsp
@@ -32,8 +31,8 @@ palindrome_start:
     dec rcx
     jmp palindrome_start
 
+; Fungsi jika string tidak palindrome
 palindrome_gagal:
-    ; Fungsi jika string tidak palindrome
     mov rax, 0
 
 ; Fungsi untuk mengakhiri megecek palindrome
