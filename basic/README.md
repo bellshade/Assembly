@@ -5,10 +5,10 @@
 # assembly :abacus:
 bahasa assembly atau bahasa rakitan adalah bahasa pemograman tingkat rendah yang digunakan dalam pemograman komputer, mikroprosesor, pengendali mikro, dan perangkat lainnya yang dapat diprogram.
 
-ada beberapa dasar alasan menggunakan bahasa rakita dari sudut pandang penggunaanya:
+ada beberapa dasar alasan menggunakan bahasa rakitan dari sudut pandang penggunaanya:
 - bahasa rakitan dibandingkan dengan bahasa mesin
 
-    basa rakitan merupakan representasi atas bahasa mesin yang dirancang agar lebih mudah dipahami oleh manusia. dengan menggunakan bahasa rakitan, seorang programmer dapat lebih mudah mengingat instruksi-instruksi dengan menggunakan simbol yag lebih dimengerti dibandingkan bila menggunakan simbol kode mesin secara langsung
+    bahasa rakitan merupakan representasi atas bahasa mesin yang dirancang agar lebih mudah dipahami oleh manusia. dengan menggunakan bahasa rakitan, seorang programmer dapat lebih mudah mengingat instruksi-instruksi dengan menggunakan simbol yag lebih dimengerti dibandingkan bila menggunakan simbol kode mesin secara langsung
 
 - bahasa rakitan dibandingkan dengan bahasa tingkat tinggi
 
@@ -24,7 +24,7 @@ bahasa rakitan diperkenalkan ``kathleen booth`` berdasarkan karya teoritis yang 
 
 pada akhir 1948, eletronic delay storage automatic calculator memiliki assembler bernama **initial order** yang terintergrasi ke dalam program bootstrapnya. ini menggunakan mnemonik satu huruf yang dikembangkan oleh david wheeler, yang dikreditkan oleh IEEE computer society sebagai pencipta "*perakit*" pertama.
 
-laporan tentang EDSAC memperkenalkan istilah "assembler" untuk menggabungkan bidang menjadi kata instruksi. SOAP ( **symbolic optimal assebmly**) adalah bahasa rakitan untuk komputer **IBM 650** ditulis oleh stan poly pada tahun 1955.
+laporan tentang EDSAC memperkenalkan istilah "assembler" untuk menggabungkan bidang menjadi kata instruksi. SOAP ( **symbolic optimal assembly**) adalah bahasa rakitan untuk komputer **IBM 650** ditulis oleh stan poly pada tahun 1955.
 
 bahasa rakitan menghilangkan banyak pemograman generasi pertama yang rawan kesalahan, dan memakan waktu yang dibutuhkan dengan komputer paling awal, membaskan programmer dari kebosana sperti mengingat kode numerik dan menghitung alamat.
 
@@ -38,8 +38,8 @@ secara historis, banyak program telah ditulis seluruhnya dalam bahasa assembly. 
 - bahasa assembly sering digunakan untuk kode tingkat rendah, misalnya untuk **kernel sistem operasi**, yang tidak dapat mengandalkan ketersediaan panggilan sistem yang sudah ada sebelumnya dan memang harus mengimplementasikannya untuk arsitektur prosesor tertentu di mana sistem akan berjalan.
 - beberapa kompiler untuk bahasa tingkat yang relatif rendah, seperti pascal atau c, memungkinkan program untuk menyematkan bahasa assembly secara langsung dalam kode sumber tersebut ( disebut **inline assembly**). program yang menggunakan fasilitas tersebut kemudian dapat membangun abstraksi menggunakan bahasa rakitan yang berbeda pada setiap platform perangkat keras. kode portable sistem kemudian dapat menggunakan komponen khusus prosesor ini melalui antarmuka yang seragam.
 - bahasa assembly berguna dalam **reverse egineering**. banyak program hanya didistrubiskan dalam bentuk kode mesin yang mudah diterjemahkan ke dalam bahasa rakitan oleh disassembler, tetapi lebih sulit untuk diterjemahkan ke bahasa tingkat yang lebih tinggi melalui dekompiler. alat ini seperti **interactive disassembler** memanfaatkan pembongkaran secara ekstensif untuk tujuan seperti itu. teknik ini digunakan oleh peretas untuk memeachkan perangkat lunak komersial, dan pesaing untuk menghasilkan perangkat lunak dengan hasil serupa dari perusahaan asing.
-- bahasa assembly digunakan untuk meningkatkan kecepatan eksekusi, terutama pada komputer pribade awal dengan daya pemrosesan dan RAM yang terbatas.
-- assembler dapat dgunakan untuk menghasilan blok data, tanpa overhead bahasa tingkat tinggi, dari kode sumber yang diformat dan dikomentari, untuk digunakan oleh kode lain.
+- bahasa assembly digunakan untuk meningkatkan kecepatan eksekusi, terutama pada komputer pribadi awal dengan daya pemrosesan dan RAM yang terbatas.
+- assembler dapat digunakan untuk menghasilan blok data, tanpa overheat bahasa tingkat tinggi, dari kode sumber yang diformat dan dikomentari, untuk digunakan oleh kode lain.
 
 selalu ada perdebatan tentang kegunaan dan kinerja bahasa rakitan relatif terhadap bahasa tingkat tinggi. meskipun bahasa rakitan memiliki kegunaan khusus di tempat yang penting.
 
