@@ -39,11 +39,20 @@ section.data
 
 ## Sektor Bss (section bss)
 
-Dalam sektor **bss** dimana digunakan untuk mendklarasikan variabel. Contoh deklarasinya yaitu :
+Sektor **bss** (block starting symbol) digunakan untuk melakukan alokasi memori secara statis untuk sebuah variable yang belum diberi nilai saat dideklarasikan. Konsep tersebut dapat diistilahkan sebagai *future data*. Deklarasi sektor **bss** dapat dilakukan seperti berikut:
 
-```
+```asm
 section.bss
 ```
+
+Berikut adalah contoh melakukan alokasi 10 bytes dalam sektor **bss**:
+
+```asm
+section.bss
+    namasaya resb 10
+```
+
+Contoh diatas menggunakan instruksi `resb` (reserve byte), dan jumlah bytes yang akan dialokasikan adalah 10 bytes.
 
 ## Sektor Text (section text)
 Dalam sektor **text** digunakan untuk menyimpan real kode atau dimana fungsi kode sebenarnya. Bagian ini arus dimulai dengan deklarasi ``global _start`` . dimana fungsi ini memberitahukan kernel dimana tempat esekusi program dimulai. Contoh dari sektor **text**, yaitu :
