@@ -1,0 +1,13 @@
+# Typewriter Clock - x86 Assembly Tutorial
+
+## Description
+This is a simple x86 Assembly program that prints the current time in the terminal with a typewriter effect.
+
+## Requirements
+- Linux (tested on Debian/Ubuntu)
+- NASM assembler
+
+## Build and Run
+```bash
+make
+./typewriter_clock
